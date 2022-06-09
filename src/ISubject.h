@@ -11,5 +11,7 @@ public:
     virtual void registerObserver(IObserver *observer) = 0;
     virtual void removeObserver(IObserver *observer) = 0;
     virtual void notifyObservers() = 0;
+
+    virtual ~ISubject() {}
 };
 #endif //DP_BEHAVIORAL_OBSERVER_ISUBJECT_H
